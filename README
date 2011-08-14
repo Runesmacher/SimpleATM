@@ -1,0 +1,51 @@
+SimpleATM v1.1
+Tested with CraftBukkit recommended build 1000
+
+**Please note: this plugin requires an iConomy PLUGIN in order to work. This plugin will NOT provide you with an economy system**
+
+Features:
+    Withdraw/deposit gold from your pocket money!
+    works with iConomy 5
+    Permissions support!
+    how to when left click on sign
+
+How to create a sign:
+    When creating an ATM sign, you must follow this format:
+        Line 1:
+        Line 2: [ATM]
+        Line 3:
+        Line 4:
+
+        Line 1: You can choose what to put here
+        Line 2: This must ALWAYS be "[ATM]" (without quotes). No colours or other characters allowed.
+        Line 3: you can place any info here
+        Line 4: you can place any info here
+
+    For example:
+        empty
+        [ATM]
+        left click
+        sign for info
+
+How to use:
+
+    Left click: Shows how to use in chat
+
+    Right click:
+        with gold block: adds 9credits to your balance
+        with gold ingot: adds 1credit to your balance
+        with anything else in hand: gives you a gold block and contracts 9credits from your account if your balance is high enough.
+
+Permissions:
+If you have Permissions installed, you can use these permission node. Otherwise, the plugin will read from ops.txt, and allow ATM signs for anyone in ops.txt
+
+    'SimpleATM.place' - this permission allows the user/group to place ATM signs.
+    'SimpleATM.remove' - this permission allows the user/group to removeATM signs.
+
+Changelog:
+Version 1.1
+    Added Sign protection
+    Added permission SimpleATM.remove
+
+Version 1.0
+    Released my plugin

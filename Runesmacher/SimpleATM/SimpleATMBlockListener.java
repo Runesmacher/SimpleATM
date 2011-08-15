@@ -8,6 +8,7 @@ import org.bukkit.block.Sign;
 import org.bukkit.event.block.BlockBreakEvent;
 
 public class SimpleATMBlockListener extends BlockListener {
+
     private final SimpleATM plugin;
     Player player;
     int isActive;
@@ -23,7 +24,7 @@ public class SimpleATMBlockListener extends BlockListener {
             if (plugin.permissionHandler != null && plugin.permissionHandler.has(player, "SimpleATM.place")) {
                 event.setLine(1, ChatColor.GOLD + "[ATM]");
                 player.sendMessage(ChatColor.GREEN + "ATM created");
-            } else if (plugin.permissionHandler == null) {
+            } else if (plugin.permissionHandler == null && player.isOp()) {
                 event.setLine(1, ChatColor.GOLD + "[ATM]");
                 player.sendMessage(ChatColor.GREEN + "ATM created");
             } else {
@@ -49,7 +50,7 @@ public class SimpleATMBlockListener extends BlockListener {
                 player = event.getPlayer();
                 if (plugin.permissionHandler != null && plugin.permissionHandler.has(player, "SimpleATM.remove")) {
                     player.sendMessage(ChatColor.GREEN + "ATM removed");
-                } else if (plugin.permissionHandler == null) {
+                } else if (plugin.permissionHandler == null && player.isOp()) {
                     player.sendMessage(ChatColor.GREEN + "ATM removed");
                 } else {
                     event.setCancelled(true);

@@ -4,28 +4,49 @@ Tested with CraftBukkit recommended build 1000
 **Please note: this plugin requires an iConomy PLUGIN in order to work. This plugin will NOT provide you with an economy system**
 
 Features:
-    Withdraw/deposit gold from your pocket money!
-    works with iConomy 5
+    Withdraw/deposit blocks from your pocket money!
+    You can set the withdraw/deposit blocks and their values in a config file. (standatrd will use gold blocks/ingots at rates of 9/1 credits
+    works with all Major Economies trough Register api by @Nijikokun
+    Support for sign color plugins.
     Permissions support!
     how to when left click on sign
 
 How to create a sign:
-    When creating an ATM sign, you must follow this format:
-        Line 1:
-        Line 2: [ATM]
-        Line 3:
-        Line 4:
+    first option:
+        When creating an ATM sign, you must follow this format:
+            Line 1:
+            Line 2: [ATM]
+            Line 3:
+            Line 4:
 
-        Line 1: You can choose what to put here
-        Line 2: This must ALWAYS be "[ATM]" (without quotes). No colours or other characters allowed.
-        Line 3: you can place any info here
-        Line 4: you can place any info here
+            Line 1: You can choose what to put here
+            Line 2: This must ALWAYS be "[ATM]" (without quotes). No colours or other characters allowed.
+            Line 3: you can place any info here
+            Line 4: you can place any info here
 
-    For example:
-        empty
-        [ATM]
-        left click
-        sign for info
+        For example:
+            empty
+            [ATM]
+            left click
+            sign for info
+
+    Second option:        
+        When creating an ATM sign, you must follow this format:
+            Line 1:
+            Line 2: [ATM]
+            Line 3:
+            Line 4:
+
+            Line 1: You can choose what to put here
+            Line 2: This must ALWAYS be "[ATM]" (without quotes). No colours or other characters allowed.
+            Line 3: you can place any info here
+            Line 4: you can place any info here
+
+        For example:
+            empty
+            [ATM]
+            left click
+            sign for info
 
 How to use:
 
@@ -43,6 +64,19 @@ If you have Permissions installed, you can use these permission node. Otherwise,
     'SimpleATM.remove' - this permission allows the user/group to removeATM signs.
 
 Changelog:
+Version 2.1
+    Fixed support for other economy plugins than iconomy
+    When left click you get list of what blocks you can depoit and wirthdraw
+
+Version 2.0
+    Added config file. You can now set what blocks you want to be able to deposit and witch block should be withdrawn and their economical values
+    Added support for all Major Economies trough Register api by @Nijikokun
+    You can now use a sign color plugin to give the ATM a color (standard it will turn gold when created)
+    checked support for bukkit 1060
+
+Version 1.2
+    When you have no permission plugin it will now be only avaidable for ops
+
 Version 1.1
     Added Sign protection
     Added permission SimpleATM.remove

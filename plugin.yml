@@ -1,5 +1,5 @@
 name: SimpleATM
 main: Runesmacher.SimpleATM.SimpleATM
-version: 2.1
+version: 2.2
 author: Runesmacher
 description: SimpleATM is an add-on for all major bukkit Economies which lets you interact with your in hand balance at the click of an ATM-sign.

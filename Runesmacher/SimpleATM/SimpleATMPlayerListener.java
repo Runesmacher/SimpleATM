@@ -55,7 +55,18 @@ public class SimpleATMPlayerListener extends PlayerListener {
                     inventory.addItem(item);
                     player.updateInventory();
                 } else {
-                    player.sendMessage(ChatColor.RED + "You do not have enough to take out a " + Material.getMaterial(config.withdrawBlock).name());
+                    if (config.withdrawSmallValue != 0 && config.withdrawSmallBlock != 0) {
+                        if (!balance.hasUnder(config.withdrawSmallValue)) {
+                            balance.subtract(config.withdrawSmallValue);
+                            ItemStack item = new ItemStack(config.withdrawSmallBlock, 1);
+                            inventory.addItem(item);
+                            player.updateInventory();
+                        } else {
+                            player.sendMessage(ChatColor.RED + "You do not have enough to take out a " + Material.getMaterial(config.withdrawSmallBlock).name());
+                        }
+                    } else {
+                            player.sendMessage(ChatColor.RED + "You do not have enough to take out a " + Material.getMaterial(config.withdrawBlock).name());
+                        }
                 }
             }
             event.setCancelled(true);

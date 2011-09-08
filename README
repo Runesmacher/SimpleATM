@@ -1,4 +1,4 @@
-SimpleATM v2.1
+SimpleATM v2.2
 Tested with CraftBukkit recommended build 1060
 
 **Please note: this plugin requires an iConomy PLUGIN in order to work. This plugin will NOT provide you with an economy system**
@@ -64,6 +64,9 @@ If you have Permissions installed, you can use these permission node. Otherwise,
     'SimpleATM.remove' - this permission allows the user/group to removeATM signs.
 
 Changelog:
+Version 2.2
+    Added possebility to wirhtdraw a block when under the first blocks value
+
 Version 2.1
     Fixed support for other economy plugins than iconomy
     When left click you get list of what blocks you can depoit and wirthdraw

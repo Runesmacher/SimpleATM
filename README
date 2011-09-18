@@ -1,4 +1,4 @@
-SimpleATM v2.2
+SimpleATM v2.3
 Tested with CraftBukkit recommended build 1060
 
 **Please note: this plugin requires an iConomy PLUGIN in order to work. This plugin will NOT provide you with an economy system**
@@ -64,6 +64,9 @@ If you have Permissions installed, you can use these permission node. Otherwise,
     'SimpleATM.remove' - this permission allows the user/group to removeATM signs.
 
 Changelog:
+Version 2.3
+    Fixed for minecraft 1.8
+
 Version 2.2
     Added possebility to wirhtdraw a block when under the first blocks value
 
